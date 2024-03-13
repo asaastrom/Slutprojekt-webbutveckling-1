@@ -8,5 +8,6 @@ main section img {
 
 .form {
     height: 80px;
+    width: 200;
     border: 1px solid black;
 }
