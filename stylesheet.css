@@ -6,7 +6,7 @@ main section img {
     width: 200px;
 }
 
-div .form {
+div.form {
     width: 200px;
     height: 80px;
     border: 1px solid black;
