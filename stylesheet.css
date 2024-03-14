@@ -1,9 +1,13 @@
 
+body {
+    margin: auto;
+}
+
 div.wrapper {
-    max-width: 800px;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(17, 1fr);
+    grid-template-rows: repeat(6, auto);
 
 }
 
@@ -14,16 +18,19 @@ div.wrapper {
     justify-content: flex start;
 }
 
-section.img-container {
-    
+
+.header-nav-container {
+    display: grid;
+    grid-column: 1 / span 16;
+    grid-row: 1 / span 1;   
 }
 
-aside.start
-
-
-main section img {
-    width: 400px;
+.header-container {
+    position: relative;
+    text-align: center;
+    color: black;
 }
+
 
 div.border-black {
     width: 200px;
