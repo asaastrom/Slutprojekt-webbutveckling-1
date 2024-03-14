@@ -1,13 +1,13 @@
 header section img {
-    width: 200px;
+    width: 400px;
 }
 
 main section img {
-    width: 200px;
+    width: 400px;
 }
 
 div.border-black {
     width: 200px;
-    height: 80px;
+    height: 20px;
     border: 1px solid black;
 }
