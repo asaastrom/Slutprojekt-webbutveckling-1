@@ -1,6 +1,25 @@
-header section img {
-    width: 400px;
+
+div.wrapper {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(4, auto);
+
 }
+
+.menu-container nav img{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex start;
+}
+
+section.img-container {
+    
+}
+
+aside.start
+
 
 main section img {
     width: 400px;
