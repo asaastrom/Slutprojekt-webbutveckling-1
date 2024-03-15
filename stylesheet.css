@@ -1,6 +1,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
 }
 
 .header-menu-container {
@@ -33,39 +34,79 @@ body {
 }
 
 .header-grid-container article.button-container {
+    width: 500px;
     grid-column: 1 / span 1;
     grid-row: 3 / 4;
     display: flex;
     align-items: center;
     margin-top: 30px;
+    margin-left: 40px;
 } 
 
 .header-grid-container article.button-container a {
     margin: 40px;
 }
 
-section.slideshow article {
+section.advice article {
+    width: 100vw;
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
 }
 
-section.slideshow article h2 {
+section.advice article h2 {
+    height: auto;
     grid-row: 1 / 2;
 }
 
-section.slideshow article p {
+section.advice article img {
+    height: 220px;
+    width: 160px;
     grid-row: 2 / 3;
     display: flex;
 }
 
-section.slideshow article img {
-    height: 200px;
+section.advice article p {
+    height: auto;
+    grid-row: 3 / 4;
+}
+
+section.recipes article {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+}
+
+section.recipes article h2 {
+    height: auto;
+    grid-row: 1 / 2;
+}
+
+section.recipes article img {
+    height: 220px;
+    width: 160px;
     grid-row: 2 / 3;
     display: flex;
 }
 
+section.recipes article p {
+    height: auto;
+    grid-row: 3 / 4;
+}
 
+section.aside {
+    display: flex;
 
+}
+
+section.aside .aside-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section aside.aside-splide-right {
+    display: flex;
+}
 
 div.border-black {
     width: 200px;

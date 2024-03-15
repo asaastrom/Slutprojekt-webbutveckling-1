@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slutprojekt webbutveckling 1</title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-sea-green.min.css">
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
@@ -24,7 +26,7 @@
         </div>
     </header>   
     <main>
-        <section class="slideshow">
+        <section class="advice">
             <article>
                 <h2>Odlingstips</h2>
                 
@@ -38,41 +40,32 @@
                 <p>FRUKT & BÄR</p>
                 
                 <img src="img/Roots-unsplash(small).jpg" alt="Rotsaker">
-                <p>ROTSAKER</p>
+                <p>ÖVRIGA GRÖNSAKER</p>
                 
-                <img src="img/Mangold-unsplash(small).jpg" alt="Gröna blad">
-                <p>GRÖNA BLAD</p>
-                <p>LÖK</p>
-                <img src="img/Salladslök-unsplash(small).jpg" alt="Lök">
-                <p>LÖK</p>
             </article>
         </section>
 
         <section class="recipes">
             <article>
                 <h2>Odlingstips</h2>
-            </article>
-            <article>
-                <p>RECEPT MED KÅL</p>
+
                 <img src="img/Kål rätt(small).jpg" alt="Recept med kål">
-            </article>
-            <article>
-                <p>RECEPT MED TOMAT</p>
+                <p>RECEPT MED KÅL</p>
+                
                 <img src="img/Pizza tomat(small).jpg" alt="Recept med tomat">
-            </article>
-            <article>
-                <p>DESSERTER</p>
+                <p>RECEPT MED TOMAT</p>
+                
                 <img src="img/Plum cake-unsplash(small).jpg" alt="Desserter">
-            </article>
-            <article>
-                <p>ÖVRIGA RECEPT</p>
+                <p>DESSERTER</p>
+                
                 <img src="img/Övriga recept(small).jpg" alt="Övriga recept">
+                <p>ÖVRIGA RECEPT</p>
             </article>
         </section>
 
         <section class="aside">
-            <aside class="aside-left">
-                <article>
+            <aside class="left">
+
                     <h2>Boka in en inspirerande dag hos oss!</h2>
                     <p>Vill du ta med vännerna till oss på en dag i 
                         trädgården, köket eller verkstaden? 
@@ -82,12 +75,17 @@
                     <p>E-post:</p>   
                     <div class="border-black"></div>
                     <a href="#">SKICKA IN!</a>                 
-                </article>
             </aside>
-            <aside class="aside-right">
-                <article>
+            <aside class="aside-splide-right">
+                <li class="splide__slide">
                     <img src="img/Drejning-unsplash(small).jpg" alt="Drejning">
-                </article>
+                </li>
+                <li class="splide__slide">
+                    <img src="" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="" alt="">
+                </li>
             </aside>
         </section>
     </main>
@@ -139,5 +137,9 @@
             </li>
         </ul>
     </footer>  
+    <script>
+        // DOM Script init
+        new Splide( '.splide' ).mount();
+    </script>
 </body>
 </html>
