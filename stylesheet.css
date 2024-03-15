@@ -4,6 +4,18 @@ body {
     width: 100vw;
 }
 
+p {
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
 .header-menu-container {
     height: 30px;
     display: flex;
@@ -94,22 +106,33 @@ section.recipes article p {
 }
 
 section.aside {
-    display: flex;
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
 }
 
 section.aside .aside-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-column: 1 / 2;
 }
 
-section aside.aside-splide-right {
-    display: flex;
+div.splide {
+    display: grid;
+    grid-column: 2 / 3;
+}
+
+div.splide div.splide__track ul.splide__list li.splide__slide img {
+    width: 100%;
+    height: auto;
+    flex: 1;
 }
 
 div.border-black {
     width: 200px;
     height: 20px;
     border: 1px solid black;
+}
+
+footer {
+    background-color: #C8BEB1;
 }
