@@ -1,0 +1,67 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-grid-container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+}
+
+.header-menu-container {
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-menu-container a img{
+    height: 30px;
+}
+
+.header-grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); 
+    background-image: url("img/Tomatplanta blur (small) (1).jpg");
+    background-size: cover;
+    height: 300px;
+}
+
+
+.header-grid-container h1{
+    grid-row: 2;
+}
+
+section.slideshow article.img-slide-one {
+    display: grid;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+}
+section.slideshow article.img-slide-two {
+    display: grid;
+    grid-column: 4 / span 4;
+    grid-row: 1 / span 1;
+}
+section.slideshow article.img-slide-three {
+    display: grid;
+    grid-column: 8 / span 4;
+    grid-row: 1 / span 1;
+}
+section.slideshow article.img-slide-four {
+    display: grid;
+    grid-column: 12 / span 4;
+    grid-row: 1 / span 1;
+}
+section.slideshow article.img-slide-six {
+    display: grid;
+    grid-column: 16 / span 4;
+    grid-row: 1 / span 1;
+}
+
+
+
+div.border-black {
+    width: 200px;
+    height: 20px;
+    border: 1px solid black;
+}
