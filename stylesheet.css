@@ -3,17 +3,44 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     width: 100vw;
 }
+  
+
+main {
+    margin: 10px;
+}
+
+h1 {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+h2 {
+    font-size: 18px;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 18px;
+}
 
 p {
     font-size: 14px;
 }
 
-h2 {
-    font-size: 18px;
-}
-
-h3 {
-    font-size: 18px;
+a {
+    height: 30px;
+    width: 80px;
+    text-decoration-line: none; 
+    color: black;
+    border: 1px solid white;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-menu-container {
@@ -31,6 +58,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr); 
+    background-color: black;
     background-image: url("img/Tomatplanta blur (small) (1).jpg");
     background-size: cover;
     height: 300px;
@@ -59,51 +87,91 @@ h3 {
     margin: 40px;
 }
 
-section.advice article {
+.advice {
     width: 100vw;
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
+    column-gap: 20px;
 }
 
-section.advice article h2 {
+.advice div img {
+    height: 80%;
+    width: 100%;
+}
+
+.advice-h {
     height: auto;
     grid-row: 1 / 2;
 }
 
-section.advice article img {
-    height: 220px;
-    width: 160px;
+.advice-one {
     grid-row: 2 / 3;
-    display: flex;
+    grid-column: 1 / 2;
+    text-align: center;
 }
 
-section.advice article p {
-    height: auto;
-    grid-row: 3 / 4;
+.advice-two {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    text-align: center;
 }
 
-section.recipes article {
+.advice-three {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    text-align: center;
+}
+
+.advice-four {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    text-align: center;
+}
+
+.recipes {
     width: 100vw;
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
+    column-gap: 20px;
 }
 
-section.recipes article h2 {
+.recipes div img {
+    height: 80%;
+    width: 100%;
+}
+
+.recipes-h {
     height: auto;
     grid-row: 1 / 2;
 }
 
-section.recipes article img {
-    height: 220px;
-    width: 160px;
+.recipes-one {
     grid-row: 2 / 3;
-    display: flex;
+    grid-column: 1 / 2;
+    text-align: center;
 }
 
-section.recipes article p {
-    height: auto;
-    grid-row: 3 / 4;
+.recipes-two {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    text-align: center;
 }
+
+.recipes-three {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    text-align: center;
+}
+
+.recipes-four {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    text-align: center;
+}
+
+
 
 section.aside {
     display: grid;
@@ -111,9 +179,16 @@ section.aside {
     grid-template-rows: repeat(1, auto);
 }
 
-section.aside .aside-left {
-    display: grid;
+.aside-left {
     grid-column: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.splide__track {
+    color: black;
+    background-color: white;
 }
 
 div.splide {
@@ -134,5 +209,20 @@ div.border-black {
 }
 
 footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr); 
     background-color: #C8BEB1;
+}
+
+footer ul.no-bullets-news {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+footer ul.no-bullets-about {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
