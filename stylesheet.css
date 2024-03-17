@@ -16,22 +16,25 @@ h1 {
     color: white;
 }
 
-h2 {
-    font-size: 18px;
+h2, .header-button {
     font-family: "Julius Sans One", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.header-button {
+    font-size: 14px;
 }
 
 h3 {
     font-size: 18px;
 }
 
-p {
-    font-size: 14px;
-}
-
-a {
+.header-button {
     height: 30px;
     width: 80px;
     text-decoration-line: none; 
@@ -57,23 +60,24 @@ a {
 .header-grid-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
     background-color: black;
     background-image: url("img/Tomatplanta blur (small) (1).jpg");
     background-size: cover;
     height: 300px;
 }
 
-.header-grid-container article.h-container {
+.h-container {
     grid-row: 2;
 }
 
-.header-grid-container article.h-container h1 {
+
+.h-container h1 {
     font-size: 42px;
     margin-left: 40px;
 }
 
-.header-grid-container article.button-container {
+.button-container {
     width: 500px;
     grid-column: 1 / span 1;
     grid-row: 3 / 4;
@@ -83,20 +87,20 @@ a {
     margin-left: 40px;
 } 
 
-.header-grid-container article.button-container a {
+.button-container a {
     margin: 40px;
 }
 
 .advice {
-    width: 100vw;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
     column-gap: 20px;
+    object-fit: cover;
 }
 
 .advice div img {
-    height: 80%;
+    height: 100%;
     width: 100%;
 }
 
@@ -108,37 +112,70 @@ a {
 .advice-one {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
+}
+
+.advice-one-p {
+    height: 42px;
+    font-size: 14px;
+    margin: 0px;
+    background-color: #C8BEB1;
     text-align: center;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
 }
 
 .advice-two {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+}
+
+.advice-two-p {
+    font-size: 14px;
+    margin: 0px;
+    background-color: #C8BEB1;
     text-align: center;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
 }
 
 .advice-three {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
+}
+
+.advice-three-p {
+    font-size: 14px;
+    margin: 0px;
+    background-color: #C8BEB1;
     text-align: center;
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
 }
 
 .advice-four {
     grid-row: 2 / 3;
     grid-column: 4 / 5;
+}
+
+.advice-four-p {
+    font-size: 14px;
+    margin: 0px;
+    background-color: #C8BEB1;
     text-align: center;
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
 }
 
 .recipes {
-    width: 100vw;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
     column-gap: 20px;
+    object-fit: cover;
 }
 
-.recipes div img {
-    height: 80%;
+.recipes img {
+    height: 100%;
     width: 100%;
 }
 
@@ -150,27 +187,60 @@ a {
 .recipes-one {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
+}
+
+.recipes-one-p {
+    font-size: 14px;
+    margin: 0px;
+    background-color: #C8BEB1;
     text-align: center;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
 }
 
 .recipes-two {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+}
+
+.recipes-two-p {
+    font-size: 14px;
+    margin: 0px;
+    background-color: #C8BEB1;
     text-align: center;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
 }
 
 .recipes-three {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
+}
+
+.recipes-three-p {
+    font-size: 14px;
+    margin: 0px;
+    background-color: #C8BEB1;
     text-align: center;
+    display: flex;
+    align-items: center;
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
 }
 
 .recipes-four {
     grid-row: 2 / 3;
     grid-column: 4 / 5;
-    text-align: center;
 }
 
+.recipes-four-p {
+    font-size: 14px;
+    margin: 0px;
+    background-color: #C8BEB1;
+    text-align: center;
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
+}
 
 
 section.aside {
