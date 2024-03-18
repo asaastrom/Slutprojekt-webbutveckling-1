@@ -58,23 +58,23 @@ h3 {
 }
 
 .header-grid-container {
+    height: 350px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr); 
     background-color: black;
     background-image: url("img/Tomatplanta blur (small) (1).jpg");
     background-size: cover;
-    height: 300px;
 }
 
 .h-container {
     grid-row: 2;
 }
 
-
 .h-container h1 {
-    font-size: 42px;
+    font-size: 64px;
     margin-left: 40px;
+    margin-top: 100px;
 }
 
 .button-container {
@@ -91,16 +91,20 @@ h3 {
     margin: 40px;
 }
 
+.wrapper-food {
+    padding: 60px;
+}
+
 .advice {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
     column-gap: 20px;
-    object-fit: cover;
+    
 }
 
 .advice div img {
-    height: 100%;
+    height: 90%;
     width: 100%;
 }
 
@@ -115,11 +119,15 @@ h3 {
 }
 
 .advice-one-p {
-    height: 42px;
+    height: 40px;
     font-size: 14px;
     margin: 0px;
+    padding: 10px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #C8BEB1;
-    text-align: center;
     grid-row: 3 / 4;
     grid-column: 1 / 2;
 }
@@ -132,13 +140,17 @@ h3 {
 .advice-two-p {
     font-size: 14px;
     margin: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #C8BEB1;
-    text-align: center;
     grid-row: 3 / 4;
     grid-column: 2 / 3;
 }
 
 .advice-three {
+   
     grid-row: 2 / 3;
     grid-column: 3 / 4;
 }
@@ -146,13 +158,17 @@ h3 {
 .advice-three-p {
     font-size: 14px;
     margin: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #C8BEB1;
-    text-align: center;
     grid-row: 3 / 4;
     grid-column: 3 / 4;
 }
 
 .advice-four {
+  
     grid-row: 2 / 3;
     grid-column: 4 / 5;
 }
@@ -160,8 +176,11 @@ h3 {
 .advice-four-p {
     font-size: 14px;
     margin: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #C8BEB1;
-    text-align: center;
     grid-row: 3 / 4;
     grid-column: 4 / 5;
 }
@@ -171,11 +190,10 @@ h3 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
     column-gap: 20px;
-    object-fit: cover;
 }
 
 .recipes img {
-    height: 100%;
+    height: 90%;
     width: 100%;
 }
 
@@ -185,20 +203,25 @@ h3 {
 }
 
 .recipes-one {
-    grid-row: 2 / 3;
+  
     grid-column: 1 / 2;
 }
 
 .recipes-one-p {
+    height: 40px;
     font-size: 14px;
     margin: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #C8BEB1;
-    text-align: center;
     grid-row: 3 / 4;
     grid-column: 1 / 2;
 }
 
 .recipes-two {
+   
     grid-row: 2 / 3;
     grid-column: 2 / 3;
 }
@@ -206,13 +229,17 @@ h3 {
 .recipes-two-p {
     font-size: 14px;
     margin: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #C8BEB1;
-    text-align: center;
     grid-row: 3 / 4;
     grid-column: 2 / 3;
 }
 
 .recipes-three {
+   
     grid-row: 2 / 3;
     grid-column: 3 / 4;
 }
@@ -220,15 +247,17 @@ h3 {
 .recipes-three-p {
     font-size: 14px;
     margin: 0px;
-    background-color: #C8BEB1;
-    text-align: center;
+    padding: 10px;
     display: flex;
+    justify-content: center;
     align-items: center;
+    background-color: #C8BEB1;
     grid-row: 3 / 4;
     grid-column: 3 / 4;
 }
 
 .recipes-four {
+  
     grid-row: 2 / 3;
     grid-column: 4 / 5;
 }
@@ -236,24 +265,31 @@ h3 {
 .recipes-four-p {
     font-size: 14px;
     margin: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #C8BEB1;
-    text-align: center;
     grid-row: 3 / 4;
     grid-column: 4 / 5;
 }
 
 
 section.aside {
+    margin-left: 60px;
+    font-size: 14px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(1, auto);
+    column-gap: 20px;
 }
 
-.aside-left {
+aside.left {
     grid-column: 1 / 2;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin-left: 40px;
 }
 
 .splide__track {
@@ -262,8 +298,10 @@ section.aside {
 }
 
 div.splide {
+    margin-right: 40px;
     display: grid;
     grid-column: 2 / 3;
+    padding: 5em;
 }
 
 div.splide div.splide__track ul.splide__list li.splide__slide img {
