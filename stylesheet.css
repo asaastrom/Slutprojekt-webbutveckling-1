@@ -223,7 +223,7 @@ p, a.subscribe, li {
 }
 
 .recipes img {
-    height: 90%;
+    height: 100%;
     width: 100%;
 }
 
@@ -307,6 +307,7 @@ p, a.subscribe, li {
 
 section.aside {
     margin-left: 60px;
+    margin-bottom: 60px;
     font-size: 14px;
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -347,6 +348,18 @@ div.splide {
     padding: 5em;
 }
 
+
+.splide__arrow svg {
+fill: darkgrey;
+height: 2.5em;
+transition: fill .2s linear;
+width: 2.5em;
+}
+
+.splide__pagination__page.is-active {
+    background: darkgrey;
+    z-index: 1;
+} 
 div.splide div.splide__track ul.splide__list li.splide__slide img {
     width: 100%;
     height: auto;
