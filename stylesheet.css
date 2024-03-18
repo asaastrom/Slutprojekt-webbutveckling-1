@@ -18,8 +18,8 @@ h1 {
 h1.white {
     font-size: 64px;
     margin-left: 40px;
-    margin-top: 100px;
     color: white;
+
 }
 
 h2, .header-button {
@@ -49,9 +49,7 @@ p, a.subscribe, li {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
-  
-  font-variation-settings:
-    "slnt" 0;
+  font-variation-settings: "slnt" 0;
 }
 
 .header-button {
@@ -73,6 +71,8 @@ p, a.subscribe, li {
     padding: 10px;
 }
 
+
+
 .header-menu-container a img{
     height: 30px;
 }
@@ -80,32 +80,31 @@ p, a.subscribe, li {
 .header-grid-container {
     height: 350px;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr); 
+    position: relative;
+    grid-template-rows: repeat(3, 117px);
     background-color: black;
     background-image: url("img/Tomatplanta blur (small) (1).jpg");
     background-size: cover;
+    z-index: -1;
+}
+
+.header-grid-container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 .h-container {
     grid-row: 2;
+    display: flex;
+    align-items: center;
 }
-
-.h-container-white {
-    font-size: 64px;
-    margin-left: 40px;
-    margin-top: 100px;
-    color: white;
-}
-
-.h-container-white {
-    font-size: 42px;
-    margin-left: 40px;
-    margin-top: 100px;
-    color: white
-}
-
-
 
 .button-container {
     width: 500px;
@@ -128,13 +127,13 @@ p, a.subscribe, li {
 .advice {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: 50px 270px 50px;
     column-gap: 20px;
     
 }
 
 .advice div img {
-    height: 90%;
+    height: 100%;
     width: 100%;
 }
 
@@ -146,10 +145,11 @@ p, a.subscribe, li {
 .advice-one {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
+    aspect-ratio: 225 / 270;
 }
 
 .advice-one-p {
-    height: 40px;
+
     font-size: 14px;
     margin: 0px;
     padding: 10px;
@@ -165,6 +165,7 @@ p, a.subscribe, li {
 .advice-two {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+    aspect-ratio: 225 / 270;
 }
 
 .advice-two-p {
@@ -183,6 +184,7 @@ p, a.subscribe, li {
    
     grid-row: 2 / 3;
     grid-column: 3 / 4;
+    aspect-ratio: 225 / 270;
 }
 
 .advice-three-p {
@@ -198,9 +200,9 @@ p, a.subscribe, li {
 }
 
 .advice-four {
-  
     grid-row: 2 / 3;
     grid-column: 4 / 5;
+    aspect-ratio: 225 / 270;
 }
 
 .advice-four-p {
