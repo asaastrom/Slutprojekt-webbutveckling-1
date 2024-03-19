@@ -19,21 +19,20 @@ h1.white {
     font-size: 64px;
     margin-left: 40px;
     color: white;
-
 }
 
-h2, .header-button {
+h2, .header-button-left, .header-button-center, .header-button-right {
     font-family: "Julius Sans One", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-h2 {
-    font-size: 18px;
+.header-button-left, .header-button-center, .header-button-right {
+    font-size: 16px;
 }
 
-.header-button {
-    font-size: 14px;
+h2 {
+    font-size: 18px;
 }
 
 h3 {
@@ -146,14 +145,13 @@ p, a.submit, li, a.subscribe {
     max-width: 80vw;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 15% 70% 15%;
+    grid-template-rows: 15% 65% 20%;
     column-gap: 20px;
 }
 
 .advice div img {
     height: 100%;
     width: 100%;
-    
 }
 
 .advice-h {
@@ -182,10 +180,13 @@ p, a.submit, li, a.subscribe {
     grid-column: 1 / 2;
 }
 
+.advice-one-p:hover {
+    background-color: #B8E47E;
+}
+
 .advice-two {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-   
     position: relative;
     width: 100%;
     padding-top: 0%;
@@ -201,6 +202,10 @@ p, a.submit, li, a.subscribe {
     background-color: #C8BEB1;
     grid-row: 3 / 4;
     grid-column: 2 / 3;
+}
+
+.advice-two-p:hover {
+    background-color: #B8E47E;
 }
 
 .advice-three {
@@ -224,10 +229,13 @@ p, a.submit, li, a.subscribe {
     grid-column: 3 / 4;
 }
 
+.advice-three-p:hover {
+    background-color: #B8E47E;
+}
+
 .advice-four {
     grid-row: 2 / 3;
     grid-column: 4 / 5;
-    
     position: relative;
     width: 100%;
     padding-top: 0%;
@@ -245,12 +253,16 @@ p, a.submit, li, a.subscribe {
     grid-column: 4 / 5;
 }
 
+.advice-four-p:hover {
+    background-color: #B8E47E;
+}
+
 .recipes {
     max-width: 80vw;
     margin-top: 40px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 15% 70% 15%;
+    grid-template-rows: 15% 65% 20%;
     column-gap: 20px;
 }
 
@@ -285,10 +297,13 @@ p, a.submit, li, a.subscribe {
     grid-column: 1 / 2;
 }
 
+.recipes-one-p:hover {
+    background-color: #FCC13A;
+}
+
 .recipes-two {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-   
     position: relative;
     width: 100%;
     padding-top: 0%;
@@ -306,10 +321,13 @@ p, a.submit, li, a.subscribe {
     grid-column: 2 / 3;
 }
 
+.recipes-two-p:hover {
+    background-color: #FCC13A;
+}
+
 .recipes-three {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
- 
     position: relative;
     width: 100%;
     padding-top: 0%;
@@ -325,6 +343,10 @@ p, a.submit, li, a.subscribe {
     background-color: #C8BEB1;
     grid-row: 3 / 4;
     grid-column: 3 / 4;
+}
+
+.recipes-three-p:hover {
+    background-color: #FCC13A;
 }
 
 .recipes-four {
@@ -348,6 +370,9 @@ p, a.submit, li, a.subscribe {
     grid-column: 4 / 5;
 }
 
+.recipes-four-p:hover {
+    background-color: #FCC13A;
+}
 
 section.aside {
     margin-left: 60px;
@@ -377,6 +402,10 @@ aside.left a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.submit:hover {
+    background-color: #D4D2BA;
 }
 
 .splide__track {
@@ -466,6 +495,10 @@ footer article.no-bullets-news {
     align-items: center;
 }
 
+.subscribe:hover {
+    background-color: grey;
+}
+
 footer ul.no-bullets-about {
     margin: 0;
     grid-column: 2 / 3;
@@ -473,8 +506,16 @@ footer ul.no-bullets-about {
     list-style-type: none;
 }
 
+.no-bullets-about a:hover {
+    color: gray;
+}
+
 footer ul.no-bullets-contact {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     list-style-type: none;
+}
+
+.no-bullets-contact a:hover {
+    color: gray;
 }
