@@ -467,6 +467,7 @@ footer article.no-bullets-news {
 }
 
 footer ul.no-bullets-about {
+    margin: 0;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     list-style-type: none;
