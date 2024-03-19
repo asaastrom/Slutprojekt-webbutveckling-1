@@ -58,8 +58,6 @@ p, a.submit, li, a.subscribe {
     padding: 10px;
 }
 
-
-
 .header-menu-container a img{
     height: 30px;
 }
@@ -113,6 +111,10 @@ p, a.submit, li, a.subscribe {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header-button-left, .header-button-center, .header-button-right:hover {
+    background-color: #B3B19D;
 }
 
 .header-button-center {
@@ -419,7 +421,6 @@ div.splide {
     grid-column: 2 / 3;
     padding: 5em;
 }
-
 
 .splide__arrow svg {
 fill: darkgrey;
