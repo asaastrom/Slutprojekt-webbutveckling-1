@@ -143,15 +143,17 @@ p, a.submit, li, a.subscribe {
 }
 
 .advice {
+    max-width: 80vw;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 50px 270px 50px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 15% 70% 15%;
     column-gap: 20px;
 }
 
 .advice div img {
     height: 100%;
     width: 100%;
+    
 }
 
 .advice-h {
@@ -162,7 +164,9 @@ p, a.submit, li, a.subscribe {
 .advice-one {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    aspect-ratio: 225 / 270;
+    position: relative;
+    width: 100%;
+    padding-top: 0%;
 }
 
 .advice-one-p {
@@ -181,7 +185,10 @@ p, a.submit, li, a.subscribe {
 .advice-two {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    aspect-ratio: 225 / 270;
+   
+    position: relative;
+    width: 100%;
+    padding-top: 0%;
 }
 
 .advice-two-p {
@@ -197,10 +204,12 @@ p, a.submit, li, a.subscribe {
 }
 
 .advice-three {
-   
     grid-row: 2 / 3;
     grid-column: 3 / 4;
-    aspect-ratio: 225 / 270;
+    
+    position: relative;
+    width: 100%;
+    padding-top: 0%;
 }
 
 .advice-three-p {
@@ -218,7 +227,10 @@ p, a.submit, li, a.subscribe {
 .advice-four {
     grid-row: 2 / 3;
     grid-column: 4 / 5;
-    aspect-ratio: 225 / 270;
+    
+    position: relative;
+    width: 100%;
+    padding-top: 0%;
 }
 
 .advice-four-p {
@@ -234,10 +246,11 @@ p, a.submit, li, a.subscribe {
 }
 
 .recipes {
+    max-width: 80vw;
     margin-top: 40px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 50px 270px 50px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 15% 70% 15%;
     column-gap: 20px;
 }
 
@@ -253,7 +266,10 @@ p, a.submit, li, a.subscribe {
 
 .recipes-one {
     grid-column: 1 / 2;
-    aspect-ratio: 225 / 270;
+   
+    position: relative;
+    width: 100%;
+    padding-top: 0%;
 }
 
 .recipes-one-p {
@@ -272,7 +288,10 @@ p, a.submit, li, a.subscribe {
 .recipes-two {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    aspect-ratio: 225 / 270;
+   
+    position: relative;
+    width: 100%;
+    padding-top: 0%;
 }
 
 .recipes-two-p {
@@ -290,7 +309,10 @@ p, a.submit, li, a.subscribe {
 .recipes-three {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
-    aspect-ratio: 225 / 270;
+ 
+    position: relative;
+    width: 100%;
+    padding-top: 0%;
 }
 
 .recipes-three-p {
@@ -308,7 +330,10 @@ p, a.submit, li, a.subscribe {
 .recipes-four {
     grid-row: 2 / 3;
     grid-column: 4 / 5;
-    aspect-ratio: 225 / 270;
+  
+    position: relative;
+    width: 100%;
+    padding-top: 0%;
 }
 
 .recipes-four-p {
