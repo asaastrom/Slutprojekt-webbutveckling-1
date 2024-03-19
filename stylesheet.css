@@ -58,7 +58,7 @@ p, a.submit, li, a.subscribe {
     padding: 10px;
 }
 
-.header-menu-container a img{
+.header-menu-container a img {
     height: 30px;
 }
 
@@ -113,7 +113,7 @@ p, a.submit, li, a.subscribe {
     align-items: center;
 }
 
-.header-button-left, .header-button-center, .header-button-right:hover {
+a.header-button-left p:hover {
     background-color: #B3B19D;
 }
 
