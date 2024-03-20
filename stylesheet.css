@@ -103,7 +103,7 @@ p, a.submit, li, a.subscribe {
     justify-content: space-between;
 } 
 
-.header-button {
+.header-button-left, .header-button-center, .header-button-right {
     height: 60px;
     width: 120px;
     color: black;
