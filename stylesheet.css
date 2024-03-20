@@ -118,14 +118,16 @@ p, a.submit, li, a.subscribe {
 }
 
 .wrapper-thumbnails {
-    max-width: 80vw;
+    width: 100%;
 }
 
 .advice, .recipes {
+    margin-right: 60px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 15% 65% 15%;
     column-gap: 20px;
+    
 }
 
 .recipes {
@@ -319,7 +321,25 @@ ul a {
 
 
 .border-bottom, .border-bottom {
+    width: 300px;
     border-bottom: 1px solid black;
+}
+
+.subscribe {
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe:hover {
+    background-color: grey;
 }
 
 .no-bullets-news, .no-bullets-about, .no-bullets-contact {
@@ -349,21 +369,4 @@ ul a {
 
 .no-bullets-contact a:hover {
     color: gray;
-}
-
-.subscribe {
-    width: 100%;
-    height: 30px;
-    margin-top: 20px;
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    font-weight: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.subscribe:hover {
-    background-color: grey;
 }
