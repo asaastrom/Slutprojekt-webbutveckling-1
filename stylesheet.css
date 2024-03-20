@@ -98,9 +98,9 @@ p, a.submit, li, a.subscribe {
     justify-content: space-around;
 } 
 
-.header-button-left {
+.header-button-left, .header-button-center, .header-button-right {
     height: 60px;
-    width: 100px;
+    width: 120px;
     text-decoration-line: none; 
     color: black;
     background-color: white;
@@ -109,31 +109,10 @@ p, a.submit, li, a.subscribe {
     align-items: center;
 }
 
-a.header-button-left p:hover {
-    background-color: #B3B19D;
+.button-container a:hover {
+    background-color: #C8BEB1;
 }
 
-.header-button-center {
-    height: 60px;
-    width: 100px;
-    text-decoration-line: none; 
-    color: black;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header-button-right {
-    height: 60px;
-    width: 100px;
-    text-decoration-line: none; 
-    color: black;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .wrapper-thumbnails {
     padding: 60px;
