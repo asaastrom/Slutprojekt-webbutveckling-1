@@ -21,14 +21,10 @@ h1.white {
     color: white;
 }
 
-h2, .header-button-left, .header-button-center, .header-button-right {
+h2, h3 {
     font-family: "Julius Sans One", sans-serif;
     font-weight: 400;
     font-style: normal;
-}
-
-.header-button-left, .header-button-center, .header-button-right {
-    font-size: 16px;
 }
 
 h2 {
@@ -36,7 +32,7 @@ h2 {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 a {
@@ -70,7 +66,7 @@ p, a.submit, li, a.subscribe {
     background-color: black;
     background-image: url("img/Tomatplanta blur (small) (1).jpg");
     background-size: cover;
-    z-index: -1;
+    z-index: 0;
 }
 
 .header-grid-container::before {
