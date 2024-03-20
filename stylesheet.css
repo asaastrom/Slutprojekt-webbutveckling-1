@@ -408,9 +408,10 @@ width: 2.5em;
     background: darkgrey;
     z-index: 1;
 } 
+
 div.splide div.splide__track ul.splide__list li.splide__slide img {
-    width: 100%;
-    height: auto;
+    width: 110%;
+    height: 100%;
     flex: 1;
 }
 
